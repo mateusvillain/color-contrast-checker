@@ -18,7 +18,7 @@
     "email": "mateus@mateusvillain.com",
     "url": "https://mateusvillain.com"
   },
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "vite": "^6.3.1"
   }
