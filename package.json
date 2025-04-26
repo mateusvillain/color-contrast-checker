@@ -1,0 +1,25 @@
+{
+  "name": "color-contrast-checker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A complete color contrast checker following WCAG guidelines.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusvillain/color-contrast-checker.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": {
+    "name": "Mateus Villain",
+    "email": "mateus@mateusvillain.com",
+    "url": "https://mateusvillain.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.3.1"
+  }
+}
