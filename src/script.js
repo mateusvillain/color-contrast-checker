@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Função para atualizar o elemento de resultado
   function updateResultElement(element, passes) {
-    element.textContent = passes ? "Aprovado" : "Reprovado"
+    element.textContent = passes ? "Success" : "Fail"
     element.className = passes ? "pass" : "fail"
   }
 
@@ -744,7 +744,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Criar tooltip temporário
           const tooltip = document.createElement("span")
           tooltip.className = "tooltip"
-          tooltip.textContent = "Copiado!"
+          tooltip.textContent = "Copied!"
           this.appendChild(tooltip)
 
           // Mostrar tooltip

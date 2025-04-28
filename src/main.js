@@ -2,7 +2,7 @@ import "./style.css"
 import "./script.js"
 
 document.querySelector("#app").innerHTML = `
-    <div class="layout-grid">
+    <div class="layout-grid" id="preview">
         <div class="cards">
             <!-- Background -->
             <div class="container color-picker">
@@ -158,32 +158,34 @@ document.querySelector("#app").innerHTML = `
     
             <div class="container contrast-result">
                 <div class="result-item">
-                    <span class="result-description">Relação de contraste</span>
+                    <span class="result-description">Contrast ratio</span>
                     <span id="contrast-ratio" class="result-description">21.00</span>
                 </div>
                 <div class="result-item">
-                    <span class="result-description">AA Normal (mínimo 4.5:1)</span>
+                    <span class="result-description">AA Normal (minimum 4.5:1)</span>
                     <span id="aa-normal" class="pass">Aprovado</span>
                 </div>
                 <div class="result-item">
-                    <span class="result-description">AA Large (mínimo 3:1)</span>
+                    <span class="result-description">AA Large (minimum 3:1)</span>
                     <span id="aa-large" class="pass">Aprovado</span>
                 </div>
                 <div class="result-item">
-                    <span class="result-description">AAA Normal (mínimo 7:1)</span>
+                    <span class="result-description">AAA Normal (minimum 7:1)</span>
                     <span id="aaa-normal" class="pass">Aprovado</span>
                 </div>
                 <div class="result-item">
-                    <span class="result-description">AAA Large (mínimo 4.5:1)</span>
+                    <span class="result-description">AAA Large (minimum 4.5:1)</span>
                     <span id="aaa-large" class="pass">Aprovado</span>
                 </div>
             </div>
         </div>
     
-        <div class="result-text" id="preview">
-            <p class="large-text">Texto grande</p>
-            <p>Texto de exemplo para visualizar o contraste</p>
-            <p class="small-text">Texto pequeno para testar contraste</p>
+        <div class="result-text">
+            <div class="result-section">
+                <p class="large-text">What is contrast ratio?</p>
+                <p>The contrast ratio in WCAG* refers to the ratio between the luminance of the text and the luminance of the background, ensuring that the text is readable for people with visual impairments.</p>
+                <p class="small-text">*Web Content Accessibility Guidelines</p>
+            </div>
         </div>
     </div>
 `
